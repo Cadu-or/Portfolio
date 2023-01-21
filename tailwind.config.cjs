@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'pxl-tile': "url(3px-tile.png)",
+        'pxl-tile': "url(../3px-tile.png)",
         'split-mgreen-black': "linear-gradient(to bottom, #2D6A4F 60% , #2F3E46 50%);"
       },
       fontFamily:{
