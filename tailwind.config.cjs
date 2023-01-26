@@ -22,6 +22,12 @@ module.exports = {
           300: '#A8A4CE',
           100: '#C8B6E2',
         },
+        'yellow':{
+          950: '#947b00'
+        },
+        'blue':{
+          150: '#009194'
+        }
       },
       backgroundImage: {
         'pxl-tile': "url(../3px-tile.png)",
