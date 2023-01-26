@@ -17,9 +17,9 @@ export function HeaderFixed(){
 export function Header(){
   return (
     <div className="items-center flex justify-between w-screen">
-      <div className="pt-2 px-8 flex flex-col">
+      <div className="pt-2 px-8 flex flex-col justify-center items-center">
         <Icon/>
-        <span className="items-center text-lg"> Cadu-or </span>
+        <span className="items-center text-xl -mt-0.5"> Cadu-or </span>
       </div>
       <NavBar/>
     </div> 
