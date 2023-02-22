@@ -1,5 +1,6 @@
 import { Carousel } from './Carousel'
 
+import I0 from '../assets/miulist/0.png';
 import I1 from '../assets/miulist/1.png';
 import I2 from '../assets/miulist/1.png';
 import I3 from '../assets/miulist/1.png';
@@ -14,7 +15,7 @@ interface ModalProjectsProps {
 export const ModalProjects = ({ open, onClose}: ModalProjectsProps) => {
   var images = ['']
   if(open === 1){
-    images = [I1, I2, I3, I4];
+    images = [I0, I1, I2, I3];
   }else{
     images = [I1, I2, I3, I4];
   }
