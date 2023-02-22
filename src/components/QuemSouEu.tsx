@@ -11,7 +11,7 @@ export function QuemSouEu (){
             <li className="p-4"> Estudante da Universidade de Brasília, atualmente no oitavo semestre de <span className='text-mgreen-500' >Ciência da Computação</span>.</li>
             <li className="p-4"> Estágiario do Supremo Tribunal Federal na área de <span className='text-mgreen-500'>Análise de Dados</span>.</li>
             <li className="p-4"> Uso diariamente <span className='text-mgreen-500 italic'>Oracle Database</span>, <span className='text-mgreen-500 italic'>SAP BusinessObjects</span>, <span className='text-mgreen-500 italic'>QlikSense</span> e <span className='text-mgreen-500 italic'>Zabbix</span>.</li>
-            <li className="p-4"> Domino linguagens como <span className='text-mgreen-500 italic'>C</span>, <span className='text-mgreen-500 italic'>C++</span> e <span className='text-mgreen-500 italic'>Python</span>. </li>
+            <li className="p-4"> Domino as linguagens <span className='text-mgreen-500 italic'>C</span>, <span className='text-mgreen-500 italic'>C++</span> e <span className='text-mgreen-500 italic'>Python</span>. </li>
             <li className="p-4"> Atualmente estudando desenvolvimento web com <span className='text-mgreen-500 italic'>React</span>, <span className='text-mgreen-500 italic'>Typescript</span> e <span className='text-mgreen-500 italic'>TailwindCSS</span>. </li>
           </ul>
         </div>

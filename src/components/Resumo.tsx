@@ -2,8 +2,8 @@ import { Check, CheckSquare, Diamond } from "phosphor-react";
 
 export function Resumo(){
   return (
-    <div className="justify-center items-center flex">
-      <div className="bg-zinc-100 mt-8 mb-4 w-19/20 p-8"> 
+    <div className="justify-center items-center flex mt-28">
+      <div className="bg-zinc-100 mt-8 mb-4 w-19/20 p-8">
         <div className="flex flex-col gap-2">
           <span className="text-purple-hunt-900 text-2xl pb-2 font-semibold">Carlos Eduardo de Oliveira Ribeiro</span>
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4"> <Diamond size={14} color="#A8A4CE" weight="duotone" /> Brasília-DF </div>
