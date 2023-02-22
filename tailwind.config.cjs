@@ -27,18 +27,24 @@ module.exports = {
         },
         'blue':{
           150: '#009194'
+        },
+        'green-button':{
+          800: "#136B69",
+          900: "#024053",
         }
       },
-      backgroundImage: {
-        'pxl-tile': "url(../3px-tile.png)",
-        'split-mgreen-black': "linear-gradient(to bottom, #2D6A4F 60% , #2F3E46 50%);"
-      },
+      // backgroundImage: {
+      //   'split-mgreen-black': "linear-gradient(to bottom, #2D6A4F 60% , #2F3E46 50%);"
+      // },
       fontFamily:{
         'sans': ['Varela Round', 'sans-serif'],
         'serif': ['Source Code Pro', 'sans-serif'],
       },
       width: {
         '19/20': '95%',
+      },
+      border: {
+        '1' : '1px'
       }
     },
   },

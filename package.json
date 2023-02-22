@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "framer-motion": "^9.0.7",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,8 +19,10 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
+    "@types/node": "^18.14.0",
+    "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.6",
+    "@types/webpack-env": "^1.18.0",
     "@vitejs/plugin-react": "^2.0.1",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
