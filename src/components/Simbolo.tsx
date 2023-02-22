@@ -12,7 +12,7 @@ export function Simbolo( {simbolo, texto, trabalhando, estudando} : SimboloProps
   let style = simbolo + " text-5xl"
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center border-2 border-zinc-400 p-4 rounded-lg">
       <i className = {style}> </i>
       <h3> {texto} </h3>
       { trabalhando ?
