@@ -6,7 +6,7 @@ import { Briefcase } from "phosphor-react";
 
 export function Ferramentas(){
   return(
-		<div>
+		<div className="mt-28">
 			<div>
 				<h1 className="mt-6 p-4 text-3xl">Ferramentas</h1>
 				<div className="grid grid-cols-6 gap-10 p-6">
@@ -14,17 +14,17 @@ export function Ferramentas(){
 					<Simbolo simbolo="devicon-oracle-original" texto="Oracle Database" trabalhando={true} estudando={false}/>
 					<Simbolo simbolo="devicon-postgresql-plain" texto="PostgreSQL" trabalhando={true} estudando={false}/>
 					<Simbolo simbolo="devicon-linux-plain" texto="Linux" trabalhando={true} estudando={false}/>
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center border-zinc-400 p-4 rounded-lg border-2">
 						<img src={zabbix} className="w-12"></img>
 						<h3>Zabbix</h3>
 						<div className="rounded-full bg-yellow-200 px-2 text-yellow-950 mb-2 flex items-center gap-1"> <Briefcase size={20} color="#947b00"/> Trabalhando </div>
 					</div>
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center border-zinc-400 p-4 rounded-lg border-2">
 						<img src={rundeck} className="w-12"></img>
 						<h3>Rundeck</h3>
 						<div className="rounded-full bg-yellow-200 px-2 text-yellow-950 mb-2 flex items-center gap-1"> <Briefcase size={20} color="#947b00"/> Trabalhando </div>
 					</div>
-					<div className="flex flex-col items-center">
+					<div className="flex flex-col items-center border-zinc-400 p-4 rounded-lg border-2">
 						<img src={qliksense} className="w-12"></img>
 						<h3>Qlik Sense</h3>
 						<div className="rounded-full bg-yellow-200 px-2 text-yellow-950 mb-2 flex items-center gap-1"> <Briefcase size={20} color="#947b00"/> Trabalhando </div>
