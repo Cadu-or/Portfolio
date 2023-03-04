@@ -6,10 +6,17 @@ interface CarouselProps{
 }
 
 export function Carousel({images} : CarouselProps){
+  const carousel = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(Number(carousel.current?.scrollWidth) - Number(carousel.current?.offsetWidth))
+  }, [])
+
   return (
     <>
-      <motion.div className='cursor-grab overflow-hidden' whileTap={{ cursor: "grabbing" }}>
-        <motion.div className='flex w-full h-full' drag="x">
+      <motion.div ref={carousel} className='flex cursor-grab overflow-hidden w-full h-full' whileTap={{ cursor: "grabbing" }}>
+        <motion.div className='flex' drag="x" dragConstraints={{right: 0, left: -width}}>
           {images?.map(image => (
             <motion.div className="rounded-xl pointer-events-none min-w-[123vh] p-2" key={image}>
               <img src={image} className=""/>
