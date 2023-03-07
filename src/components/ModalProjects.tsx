@@ -5,6 +5,7 @@ import I1 from '../assets/miulist/1.png';
 import I2 from '../assets/miulist/2.png';
 import I3 from '../assets/miulist/3.gif';
 import I4 from '../assets/miulist/5.png';
+import I5 from '../assets/miulist/6.png';
 
 
 interface ModalProjectsProps {
@@ -15,7 +16,7 @@ interface ModalProjectsProps {
 export const ModalProjects = ({ open, onClose}: ModalProjectsProps) => {
   var images = ['']
   if(open === 1){
-    images = [I0, I1, I2, I3, I4];
+    images = [I0, I1, I2, I3, I4, I5];
   }else{
     images = [I1, I2, I3, I4];
   }

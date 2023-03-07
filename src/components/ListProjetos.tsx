@@ -16,7 +16,7 @@ export function ListProjetos(){
         <button onClick={()=> setOpenModal(1)}>
           <ProjetoCard
             descricao="A Miulist funciona como uma lista de presentes entre duas pessoas.
-            A temática do site são dois personagens chamados de Peach e Goma, animação feita por Bu Jue Xiao Xiao que ficou muito conhecida nas redes sociais." 
+            A temática do site são dois personagens chamados Peach e Goma, animação feita por Bu Jue Xiao Xiao que ficou muito conhecida nas redes sociais." 
             logo={Miulist}
             ferramentas={["devicon-react-original-wordmark"]}
           />
