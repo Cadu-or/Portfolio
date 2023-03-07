@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { ProjetoCard } from "./ProjetoCard";
-import Miulist from '../assets/miulist/Miulist.png';
-import { useState } from 'react';
 import { ModalProjects } from "./ModalProjects";
+
+import Miulist from "../assets/miulist/Miulist.png";
+import TrabalhoPAA from "../assets/projetopaa/TrabalhoPAA.png";
+import SegurancaComputacional from "../assets/seguranca/SegurancaComputacional.png";
 
 interface ProjetoProps{
   projeto: string;
@@ -13,14 +16,45 @@ export function ListProjetos(){
     <div className="p-4 text-2xl mt-28">
       Projetos
       <div className="grid grid-cols-4 gap-10 p-6">
-        <button onClick={()=> setOpenModal(1)}>
-          <ProjetoCard
-            descricao="A Miulist funciona como uma lista de presentes entre duas pessoas.
-            A temática do site são dois personagens chamados Peach e Goma, animação feita por Bu Jue Xiao Xiao que ficou muito conhecida nas redes sociais." 
-            logo={Miulist}
-            ferramentas={["devicon-react-original-wordmark"]}
-          />
-        </button>
+        <div>
+          <button onClick={()=> setOpenModal(1)}>
+            <ProjetoCard
+              descricao="A Miulist funciona como uma lista de presentes entre duas pessoas.
+              A temática do site são dois personagens chamados Peach e Goma, animação feita por Bu Jue Xiao Xiao que ficou muito conhecida nas redes sociais." 
+              logo={Miulist}
+              ferramentas={["devicon-react-original-wordmark"]}
+            />
+          </button>
+        </div>
+        <div>
+          <button onClick={()=> setOpenModal(2)}>
+            <ProjetoCard
+              descricao="O trabalho de Programação e Análise de Algoritimos consistia em criar um serviço de locomoção. Essa aplicacação lia um grafo que era representado como uma cidade,
+              encontrava o carro mais próximo do passageiro, localizava os menores caminhos de acordo com origem e destino do carro considerando distancia e velocidade da via."
+              logo={TrabalhoPAA}
+              ferramentas={["devicon-python-plain-wordmark", "devicon-django-plain-wordmark"]}
+            />
+          </button>
+          <a href="https://github.com/VitorVVO/Front-end-PAA-2021-2" target={"_blank"}>
+            <button className="text-base mt-2 p-2 bg-mgreen-90">
+              Ver no GitHub
+            </button>
+          </a>
+        </div>
+        <div>
+          <button onClick={()=> setOpenModal(3)}>
+            <ProjetoCard
+              descricao={`Durante a disciplina de Segurança Computacional 3 projetos foram desenvolvidos: Cifragem, decifragem e ataque à cifra de Vegenère; AES (Advanced Encryption Standard) implementado para a criptografia de imagens utilizando os algoritmos ECB (Electronic CodeBook) e CTR (Counter); Algoritmo para envio e recebimento de mensagem utilizando o método RSA.`}
+              logo={SegurancaComputacional}
+              ferramentas={["devicon-cplusplus-plain-wordmark", "devicon-python-plain-wordmark"]}
+            />
+          </button>
+          <a href="https://github.com/Cadu-or/SC" target={"_blank"}>
+            <button className="text-base mt-2 p-2 bg-mgreen-90">
+              Ver no GitHub
+            </button>
+          </a>
+        </div>
         <ModalProjects open={openModal} onClose={() => setOpenModal(0)}/>
       </div>
     </div>

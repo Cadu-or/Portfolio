@@ -7,6 +7,8 @@ import I3 from '../assets/miulist/3.gif';
 import I4 from '../assets/miulist/5.png';
 import I5 from '../assets/miulist/6.png';
 
+import NotFound from '../assets/NotFound.png';
+
 
 interface ModalProjectsProps {
   open: number;
@@ -18,7 +20,7 @@ export const ModalProjects = ({ open, onClose}: ModalProjectsProps) => {
   if(open === 1){
     images = [I0, I1, I2, I3, I4, I5];
   }else{
-    images = [I1, I2, I3, I4];
+    images = [NotFound, NotFound];
   }
   if (!open) return null
   return (
