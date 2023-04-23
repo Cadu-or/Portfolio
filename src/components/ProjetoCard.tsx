@@ -1,8 +1,7 @@
-import Children from React;
 interface ProjetoCardProps{
   logo: string;
   ferramentas: string[];
-  children: Children;
+  children: string | JSX.Element | JSX.Element[];
 }
 
 export function ProjetoCard({children, logo, ferramentas} : ProjetoCardProps){
