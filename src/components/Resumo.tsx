@@ -92,7 +92,7 @@ export function Resumo(){
           <div className="flex flex-col gap-1 ml-4">
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span className="text-purple-hunt-300"> Certificações. </span></div>
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b> Word 2007, Excel 2007, Corel Draw, Dreamweaver,  Flash MX, Photoshop CS e Indesign.</b></div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm pb-2"> New Value Informática - 2014(15 meses).</div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm pb-2"> New Value Informática - 2014/2015 (180 horas).</div>
             
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Microsoft Power BI para Data Science, versão 2.0.</b></div>
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Data Science Academy - 2021 (72 Horas).</div>
