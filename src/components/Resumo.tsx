@@ -1,4 +1,4 @@
-import { Check, CheckSquare, Diamond } from "phosphor-react";
+import { CheckSquare, Diamond } from "phosphor-react";
 
 export function Resumo(){
   return (
@@ -10,6 +10,7 @@ export function Resumo(){
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4"> <Diamond size={14} color="#A8A4CE" weight="duotone" /> Telefone: (61) 99399-5745 </div>
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4"> <Diamond size={14} color="#A8A4CE" weight="duotone" /> E-mail: carlos.e.o.ribeiro@gmail.com </div>
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4"> <Diamond size={14} color="#A8A4CE" weight="duotone" /> Github: <a className="underline underline-offset-2" target="_blank" href="https://github.com/Cadu-or"> Cadu-or </a> </div>
+          <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4"> <Diamond size={14} color="#A8A4CE" weight="duotone" /> LinkedIn: <a className="underline underline-offset-2" target="_blank" href="https://linkedin.com/in/cadu-or/"> cadu-or </a> </div>
         </div>
 
         <hr className="m-6 mx-96 opacity-80" style={{
@@ -36,6 +37,12 @@ export function Resumo(){
             <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Setembro/2021 - Atualmente </div>
             <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Responsabilidades:</b>  Suporte técnico em Banco de Dados (Oracle), manuseio em ferramentas de análise de dados (SAP BO e QLIK Sense) e automação de processos e rotinas (Rundeck e ODI).</div>
           </div>
+
+          <div className="flex flex-col gap-1 ml-4">
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span> <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b> - Pesquisador </span></div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Janeiro/2023 - Atualmente </div>
+            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Responsabilidades:</b> Integrante da equipe de Banco de Dados, encarregado de criar modelagens e do processo de ETL (Pentaho Data Integration) dos bancos (Postgres e Oracle).</div>
+          </div>
         </div>
 
         <hr className="m-10 mx-96 opacity-80" style={{
@@ -47,7 +54,7 @@ export function Resumo(){
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 font-semibold"> <CheckSquare size={28} color="#A8A4CE" weight="bold" /> Formação Acadêmica </div>
           <div className="flex flex-col gap-1 ml-4">
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span> <b>Graduando em Ciência da Computação</b> - Universidade de Brasília (UnB) </span></div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 8º Semestre </div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 10º Semestre </div>
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Conclusão:</b> Junho/2023</div>
           </div>
         </div>
@@ -89,6 +96,9 @@ export function Resumo(){
             
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Microsoft Power BI para Data Science, versão 2.0.</b></div>
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Data Science Academy - 2021 (72 Horas).</div>
+
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Full Stack Javascript.</b></div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> OneBitCode - 2023 (80 Horas).</div>
 
           </div>
           
