@@ -33,15 +33,39 @@ export function Resumo(){
           </div>
 
           <div className="flex flex-col gap-1 ml-4">
-            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span> <b>Supremo Tribunal Federal</b> - Estagiário </span></div>
-            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Setembro/2021 - Atualmente </div>
-            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Responsabilidades:</b>  Suporte técnico em Banco de Dados (Oracle), manuseio em ferramentas de análise de dados (SAP BO e QLIK Sense) e automação de processos e rotinas (Rundeck e ODI).</div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm">
+              <span> <b>Supremo Tribunal Federal</b> - Estagiário </span>
+            </div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              Setembro/2021 - Setembro/2023
+            </div>
+            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              <b>Responsabilidades:</b>  Suporte técnico em Banco de Dados (Oracle), manuseio em ferramentas de análise de dados (SAP BO e QLIK Sense) e automação de processos e rotinas (Rundeck e ODI).
+            </div>
           </div>
 
           <div className="flex flex-col gap-1 ml-4">
-            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span> <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b> - Pesquisador </span></div>
-            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> Janeiro/2023 - Atualmente </div>
-            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Responsabilidades:</b> Integrante da equipe de Banco de Dados, encarregado de criar modelagens e do processo de ETL (Pentaho Data Integration) dos bancos (Postgres e Oracle).</div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm">
+              <span> <b>Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome</b> - Pesquisador </span>
+            </div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              Janeiro/2023 - Atualmente 
+            </div>
+            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              <b>Responsabilidades:</b> Integrante da equipe de Banco de Dados, encarregado de criar modelagens e do processo de ETL (Pentaho Data Integration) dos bancos (Postgres e Oracle).
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1 ml-4">
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm">
+              <span> <b>SEA Tecnologia</b> - Desenvolvedor Front-End </span>
+            </div>
+            <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              Outubro/2023 - Abril/2024 
+            </div>
+            <div className="flex flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 
+              <b>Responsabilidades:</b> Integrante da equipe de Front-End encarregado na criação de portais utilizando o CMS Liferay para diversas instituições no Distrito Federal. Participante no desenvolvimento colaborativo de projetos, contribuindo para a implementação dos portais da CLDF, do sistema SIGA do SESC, SESC Mesa Brasil e SESCDF. Tecnologias: HTML, SCSS, JavaScript, ReactJS e GraphQL.
+            </div>
           </div>
         </div>
 
@@ -54,8 +78,8 @@ export function Resumo(){
           <div className="flex text-center items-center flex-row gap-2 text-purple-hunt-900 font-semibold"> <CheckSquare size={28} color="#A8A4CE" weight="bold" /> Formação Acadêmica </div>
           <div className="flex flex-col gap-1 ml-4">
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span> <b>Graduando em Ciência da Computação</b> - Universidade de Brasília (UnB) </span></div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 10º Semestre </div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Conclusão:</b> Junho/2023</div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> 12º Semestre </div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Conclusão:</b> Julho/2024</div>
           </div>
         </div>
 
@@ -74,12 +98,12 @@ export function Resumo(){
           
           <div className="flex flex-col gap-1 ml-4">
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span className="text-purple-hunt-300"> Conhecimentos em Programação. </span></div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Linguagens:</b> C, C++, Python, Ruby e SQL.</div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Linguagens:</b> C, C++, Python, Ruby, SQL e Java.</div>
           </div>
 
           <div className="flex flex-col gap-1 ml-4">
             <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <span className="text-purple-hunt-300"> Conhecimentos em Desenvolvimento Web e Mobile. </span></div>
-            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Tecnologias:</b> HTML, CSS, Javascript, Typescript, TailwindCSS, NodeJS, React, React Native e Django.</div>
+            <div className="flex items-center flex-row gap-2 text-purple-hunt-900 ml-4 text-sm"> <b>Tecnologias:</b> HTML, CSS, Javascript, Typescript, TailwindCSS, NodeJS, React, React Native, Django e Liferay DXP.</div>
           </div>
 
           <div className="flex flex-col gap-1 ml-4">
