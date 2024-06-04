@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 export function Footer() {
   return (
     <>
-      <div className="bg-zinc-800 w-screen h-12 justify-between items-center flex p-8">
+      <div className="bg-zinc-800 h-12 justify-between items-center flex p-8">
         <span> Feito por <a className="underline underline-offset-2" target="_blank" href="https://github.com/Cadu-or"> Carlos Eduardo </a></span>
         <div className="flex space-x-4">
           <form action="https://www.linkedin.com/in/cadu-or/" target="_blank">

@@ -1,6 +1,6 @@
-import { AddressBook, Briefcase, Folders, GithubLogo, PersonSimpleRun, GlobeHemisphereWest } from "phosphor-react";
+import { Briefcase, Folders, GlobeHemisphereWest } from "phosphor-react";
+import { SiGithub } from "react-icons/si";
 import { ButtonGit } from "./ButtonGit";
-import { SiGithub } from "react-icons/si"
 
 export interface GitCardProps{
   name: string | undefined,
@@ -16,12 +16,12 @@ export interface GitCardProps{
 export function GitCard({ name, login, company, bio, followers, following, public_repos, location}: GitCardProps) {
   return (
     <div className="w-1/2 flex justify-center">
-      <div className="flex-col flex w-4/5 bg-mgreen-700">
+      <div className="flex-col flex w-4/5 bg-mgreen-700 rounded-lg">
         <SiGithub className="pt-2 pl-2 w-8 h-8 justify-start"/>
         <div className="h-48 w-full bg-split-mgreen-black justify-center items-center flex pt-8">
           <img className="w-32 rounded-full border-white border-4 " src="https://avatars.githubusercontent.com/u/52487636?v=4" alt="cadu-or" />
         </div>
-        <div className="justify-center flex items-center flex-col bg-mgreen-90 pb-6">
+        <div className="justify-center flex items-center flex-col bg-mgreen-90 rounded-b-lg pb-6">
             <div className="text-2xl pt-2"> {name} </div>
             <span className="pb-6 text-zinc-400"> {login} </span>
             <span className="pb-8"> {bio} </span>
