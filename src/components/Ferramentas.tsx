@@ -8,7 +8,7 @@ export function Ferramentas(){
 		<div className="mt-28">
 			<>
 				<h1 className="mt-6 p-4 text-3xl">Ferramentas</h1>
-				<div className="grid grid-cols-2 gap-10 p-6 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4">
+				<div className="grid grid-cols-2 gap-7 p-6 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4">
 					<Simbolo simbolo="devicon-python-plain" texto="Python" trabalhando={true} estudando={true}/>
 					<Simbolo simbolo="devicon-postgresql-plain" texto="PostgreSQL" trabalhando={true} estudando={false}/>
 					<Simbolo simbolo="devicon-linux-plain" texto="Linux" trabalhando={true} estudando={false}/>
