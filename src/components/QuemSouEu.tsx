@@ -5,7 +5,7 @@ export function QuemSouEu() {
     <div>
       <span className="flex justify-center text-4xl"> Sobre mim </span>
 
-      <div className="flex w-full flex-row p-16">
+      <div className="flex w-full flex-row p-5 py-24 sm:px-20">
         <div className="w-full sm:w-1/2">
           <ul>
             <li className="p-4">

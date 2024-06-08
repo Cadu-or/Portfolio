@@ -1,10 +1,9 @@
 import { Icon } from "./Icon";
 
-export function Logo(){
-  return(
-    <div className="pt-2 px-8 flex-col items-center">
+export function Logo() {
+  return (
+    <div className="flex-col items-center px-8 py-2">
       <Icon />
-      <span className="items-center text-xl -mt-0.5"> Cadu-or </span>
     </div>
-  )
+  );
 }
