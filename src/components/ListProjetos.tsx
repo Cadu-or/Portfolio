@@ -4,6 +4,7 @@ import { ProjetoCard } from "./ProjetoCard";
 
 import Miulist from "../assets/miulist/Miulist.png";
 import TrabalhoPAA from "../assets/projetopaa/TrabalhoPAA.png";
+import SeaTecnlogia from "../assets/SeaTecnologia.png";
 import SegurancaComputacional from "../assets/seguranca/SegurancaComputacional.png";
 
 interface ProjetoProps {
@@ -13,9 +14,9 @@ interface ProjetoProps {
 export function ListProjetos() {
   const [openModal, setOpenModal] = useState(0);
   return (
-    <div className="mt-28 p-4 text-2xl">
+    <div className="mt-28 px-8 text-3xl">
       Projetos
-      <div className="grid grid-cols-1 gap-10 p-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-10 py-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <button onClick={() => setOpenModal(1)}>
             <ProjetoCard
@@ -91,6 +92,29 @@ export function ListProjetos() {
           </a>
         </div>
         <ModalProjects open={openModal} onClose={() => setOpenModal(0)} />
+        <div>
+          <div>
+            <ProjetoCard
+              logo={SeaTecnlogia}
+              ferramentas={["devicon-react-original-wordmark"]}
+            >
+              <span className="px-4 text-justify text-sm">
+                O desafio da SEA Tecnologia consistia em criar uma plataforma
+                web capaz de adicionar funcionários em um sistema web. Seu front
+                precisava ser em react, a persistência de dados feita utilizando
+                json server, a biblioteca principal utilizada para os
+                componentes foi o AntDesign e era necessário a utilização de
+                Redux. O desafio foi concluído com sucesso e trabalhei 6 meses
+                na SEA Tecnologia como desenvolvedor front-end.
+              </span>
+            </ProjetoCard>
+          </div>
+          <a href="https://github.com/Cadu-or/seatec" target={"_blank"}>
+            <button className="mt-2 bg-mgreen-90 p-2 text-base">
+              Ver no GitHub
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
