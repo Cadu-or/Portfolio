@@ -63,7 +63,7 @@ export function Ferramentas() {
           estudando={true}
         />
         <Simbolo
-          simbolo="devicon-nextjs-original"
+          simbolo="devicon-nextjs-plain"
           texto="NextJS"
           trabalhando={false}
           estudando={true}
