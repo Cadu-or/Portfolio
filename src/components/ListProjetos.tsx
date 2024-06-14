@@ -1,23 +1,33 @@
-import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 import { ModalProjects } from "./ModalProjects";
 import { ProjetoCard } from "./ProjetoCard";
 
+import { HandTap } from "@phosphor-icons/react";
+import SeaTecnlogia from "../assets/SeaTecnologia.png";
 import Miulist from "../assets/miulist/Miulist.png";
 import TrabalhoPAA from "../assets/projetopaa/TrabalhoPAA.png";
-import SeaTecnlogia from "../assets/SeaTecnologia.png";
 import SegurancaComputacional from "../assets/seguranca/SegurancaComputacional.png";
-
 interface ProjetoProps {
   projeto: string;
 }
 
 export function ListProjetos() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in",
+      once: false,
+    });
+  });
   const [openModal, setOpenModal] = useState(0);
+
   return (
     <div className="mt-28 px-8 text-3xl">
       Projetos
       <div className="grid grid-cols-1 gap-10 py-6 md:grid-cols-2 lg:grid-cols-4">
-        <div>
+        <div data-aos="zoom-in">
           <button onClick={() => setOpenModal(1)}>
             <ProjetoCard
               logo={Miulist}
@@ -29,11 +39,15 @@ export function ListProjetos() {
                 e Goma, animação feita por Bu Jue Xiao Xiao que ficou muito
                 conhecida nas redes sociais.
               </span>
+              <HandTap
+                size={24}
+                className="absolute bottom-4 right-4 text-zinc-800"
+              />
             </ProjetoCard>
           </button>
         </div>
         <div>
-          <div>
+          <div data-aos="zoom-in">
             <ProjetoCard
               logo={TrabalhoPAA}
               ferramentas={[
@@ -52,6 +66,9 @@ export function ListProjetos() {
             </ProjetoCard>
           </div>
           <a
+            data-aos="fade-up"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="600"
             href="https://github.com/VitorVVO/Front-end-PAA-2021-2"
             target={"_blank"}
           >
@@ -61,7 +78,7 @@ export function ListProjetos() {
           </a>
         </div>
         <div>
-          <div>
+          <div data-aos="zoom-in">
             <ProjetoCard
               logo={SegurancaComputacional}
               ferramentas={[
@@ -85,7 +102,13 @@ export function ListProjetos() {
               </ul>
             </ProjetoCard>
           </div>
-          <a href="https://github.com/Cadu-or/SC" target={"_blank"}>
+          <a
+            data-aos="fade-up"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="600"
+            href="https://github.com/Cadu-or/SC"
+            target={"_blank"}
+          >
             <button className="mt-2 bg-mgreen-90 p-2 text-base">
               Ver no GitHub
             </button>
@@ -93,7 +116,7 @@ export function ListProjetos() {
         </div>
         <ModalProjects open={openModal} onClose={() => setOpenModal(0)} />
         <div>
-          <div>
+          <div data-aos="zoom-in">
             <ProjetoCard
               logo={SeaTecnlogia}
               ferramentas={["devicon-react-original-wordmark"]}
@@ -109,7 +132,13 @@ export function ListProjetos() {
               </span>
             </ProjetoCard>
           </div>
-          <a href="https://github.com/Cadu-or/seatec" target={"_blank"}>
+          <a
+            data-aos="fade-up"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="600"
+            href="https://github.com/Cadu-or/seatec"
+            target={"_blank"}
+          >
             <button className="mt-2 bg-mgreen-90 p-2 text-base">
               Ver no GitHub
             </button>

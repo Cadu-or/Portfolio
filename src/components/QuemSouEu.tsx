@@ -1,13 +1,25 @@
-import Typewriter from "typewriter-effect";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Writer } from "./Writer";
 
 export function QuemSouEu() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duração das animações em milissegundos // Easing das animações
+      once: false,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div>
-      <span className="flex justify-center text-4xl"> Sobre mim </span>
-
+      <span data-aos="fade-up" className="flex justify-center text-4xl">
+        Sobre mim
+      </span>
       <div className="flex w-full flex-row p-5 py-24 sm:px-20">
         <div className="w-full sm:w-1/2">
-          <ul>
+          <ul data-aos="fade-right">
             <li className="p-4">
               Estudante da Universidade de Brasília, atualmente cursando{" "}
               <span className="text-mgreen-500">Ciência da Computação</span>.
@@ -38,24 +50,8 @@ export function QuemSouEu() {
             </li>
           </ul>
         </div>
-
-        <div className="hidden w-1/2 sm:flex">
-          <div className="flex pl-10 lg:pl-40">
-            <span className="flex items-center font-serif text-xl text-mgreen-500">
-              <Typewriter
-                options={{
-                  strings: [
-                    'printf("Hello, World!\\n");',
-                    'std::cout << "Hello, World!\\n";',
-                    'print("Hello, World!")',
-                    'console.log("Hello, World!")',
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </span>
-          </div>
+        <div data-aos="fade-left" className="hidden w-1/2 sm:flex">
+          <Writer />
         </div>
       </div>
     </div>

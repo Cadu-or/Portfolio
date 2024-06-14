@@ -1,9 +1,20 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import qliksense from "../assets/qliksense.png";
 import rundeck from "../assets/rundeck.png";
 import zabbix from "../assets/zabbix.png";
 import { Simbolo } from "./Simbolo";
 
 export function Ferramentas() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duração das animações em milissegundos
+      easing: "ease-in", // Easing das animações
+      once: false,
+      mirror: true,
+    });
+  }, []);
   return (
     <div className="mt-28">
       <h1 className="mt-6 px-8 text-3xl">Ferramentas</h1>
@@ -104,15 +115,24 @@ export function Ferramentas() {
           trabalhando={false}
           estudando={true}
         />
-        <div className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4">
+        <div
+          data-aos="flip-left"
+          className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4"
+        >
           <img src={zabbix} className="w-12"></img>
           <h3>Zabbix</h3>
         </div>
-        <div className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4">
+        <div
+          data-aos="flip-left"
+          className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4"
+        >
           <img src={rundeck} className="w-12"></img>
           <h3>Rundeck</h3>
         </div>
-        <div className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4">
+        <div
+          data-aos="flip-left"
+          className="flex h-44 flex-col items-center justify-center rounded-lg border-2 border-zinc-400 p-4"
+        >
           <img src={qliksense} className="w-12"></img>
           <h3>Qlik Sense</h3>
         </div>
