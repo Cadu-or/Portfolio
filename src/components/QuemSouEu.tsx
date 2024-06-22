@@ -37,15 +37,18 @@ export function QuemSouEu() {
             </li>
             <li className="p-4">
               Domino as linguagens{" "}
-              <span className="italic text-mgreen-500">TypesCript</span>,{" "}
+              <span className="italic text-mgreen-500">TypeScript</span>,{" "}
               <span className="italic text-mgreen-500">JavaScript</span>,{" "}
               <span className="italic text-mgreen-500">C++</span> e{" "}
               <span className="italic text-mgreen-500">Python</span>.
             </li>
             <li className="p-4">
-              Atualmente estudando desenvolvimento web com{" "}
-              <span className="italic text-mgreen-500">React</span>,{" "}
-              <span className="italic text-mgreen-500">Typescript</span> e{" "}
+              Atualmente estudando desenvolvimento fullstack com o foco em microsserviços utilizando
+              <span className="italic text-mgreen-500">NestJS</span>,
+              <span className="italic text-mgreen-500">RabbitMQ</span>,
+              <span className="italic text-mgreen-500">Python</span>,
+              <span className="italic text-mgreen-500">GoLang</span>,
+              <span className="italic text-mgreen-500">NextJS</span> e
               <span className="italic text-mgreen-500">TailwindCSS</span>.
             </li>
           </ul>
