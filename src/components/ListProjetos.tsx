@@ -114,7 +114,6 @@ export function ListProjetos() {
             </button>
           </a>
         </div>
-        <ModalProjects open={openModal} onClose={() => setOpenModal(0)} />
         <div>
           <div data-aos="zoom-in">
             <ProjetoCard
@@ -145,6 +144,7 @@ export function ListProjetos() {
           </a>
         </div>
       </div>
+      <ModalProjects open={openModal} onClose={() => setOpenModal(0)} />
     </div>
   );
 }
